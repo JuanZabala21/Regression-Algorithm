@@ -37,4 +37,13 @@ lr = linear_nodel.LinearRegression()
 
 lr.fit(X_train, Y_Train)
 
+Y_pred = lr.predict(X_Test)
+
+plt.scatter(X_test, Y_test)
+plt.plot(X_test, Y_pred, color="red", linewidth=3)
+plt.title("Regresion Lineal Simple")
+plt.xlabel("Numero de habitaciones")
+plt.ylabel("Valor medio")
+plt.show()
+
 
