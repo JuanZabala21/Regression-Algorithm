@@ -51,4 +51,8 @@ print('Datos del modelo de regresion')
 print()
 print('Valor de la pendiente')
 print(lr.intercept_)
+print() 
+print('La ecuacion del modelo es igual a: ')
+print('y =', lr.coef_, 'x ', lr.intercept_)
+
 
