@@ -1,28 +1,37 @@
+## Librerias ## 
 import numpy as np 
 from sklearn import datasets, linear_model 
 import matplotlib.pyblot as plt 
 
+## Datos Sklearn ## 
 boston = datasets.load_boston()
 print(boston)
 print()
 
+## Informacion del Data Set ## 
 print('Infromación en el dataset: ')
 print(boston.keys())
 print() 
 
+## Caracteristicas del Data Set ##
 print('Caracteristicas del dataset: ')
 print(boston.DESCR)
 
+## Numero de datos del Data Set ##
 print('Cantidad de datos: ')
 print(boston.data.change)
 print() 
 
+##Informacion de Columnas ## 
 print('Nombres de Columnas: ')
 print(boston.feature_names)
 
+## Solo 5 columnas del Data Set ## 
 X = boston.data[:, np.newaxis, 5]
 
+## Datos correspondientes a las etiquetas ## 
 Y = boston.target 
+
 
 plt.scatter(X,Y)
 plt.xlabel("Numero de habitaciones")
