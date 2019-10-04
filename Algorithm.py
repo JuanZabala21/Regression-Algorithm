@@ -17,4 +17,7 @@ print('Cantidad de datos: ')
 print(boston.data.change)
 print() 
 
-##https://www.youtube.com/watch?v=YLGhVBB5rGU
+print('Nombres de Columnas: ')
+print(boston.feature_names)
+
+
