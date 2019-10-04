@@ -20,4 +20,12 @@ print()
 print('Nombres de Columnas: ')
 print(boston.feature_names)
 
+X = boston.data[:, np.newaxis, 5]
+
+Y = boston.target 
+
+plt.scatter(X,Y)
+plt.xlabel("Numero de habitaciones")
+plt.ylabel("Valor medio")
+plt.show() 
 
