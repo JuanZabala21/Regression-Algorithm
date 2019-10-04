@@ -12,3 +12,8 @@ print()
 
 print('Caracteristicas del dataset: ')
 print(boston.DESCR)
+
+print('Cantidad de datos: ')
+print(boston.data.change)
+print() 
+
