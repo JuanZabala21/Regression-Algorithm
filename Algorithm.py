@@ -44,12 +44,16 @@ from sklearn.model_selection import train_test_split
 ## Separando datos ## 
 X_train, X_test, Y_test = train_test_split(X, Y, test_size=0.2)
 
+## Definiendo ## 
 lr = linear_nodel.LinearRegression()
 
+## Modelo ## 
 lr.fit(X_train, Y_train)
 
+## Predicción ## 
 Y_pred = lr.predict(X_test)
 
+## Graficando ## 
 plt.scatter(X_test, Y_test)
 plt.plot(X_test, Y_pred, color="red", linewidth=3)
 plt.title("Regresion Lineal Simple")
@@ -57,6 +61,7 @@ plt.xlabel("Numero de habitaciones")
 plt.ylabel("Valor medio")
 plt.show()
 
+## Resultados ## 
 print()
 print('Datos del modelo de regresion')
 print()
