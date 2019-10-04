@@ -35,9 +35,9 @@ X_train, X_test, Y_test = train_test_split(X, Y, test_size=0.2)
 
 lr = linear_nodel.LinearRegression()
 
-lr.fit(X_train, Y_Train)
+lr.fit(X_train, Y_train)
 
-Y_pred = lr.predict(X_Test)
+Y_pred = lr.predict(X_test)
 
 plt.scatter(X_test, Y_test)
 plt.plot(X_test, Y_pred, color="red", linewidth=3)
@@ -46,4 +46,9 @@ plt.xlabel("Numero de habitaciones")
 plt.ylabel("Valor medio")
 plt.show()
 
+print()
+print('Datos del modelo de regresion')
+print()
+print('Valor de la pendiente')
+print(lr.intercept_)
 
