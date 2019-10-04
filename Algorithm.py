@@ -61,6 +61,7 @@ plt.xlabel("Numero de habitaciones")
 plt.ylabel("Valor medio")
 plt.show()
 
+
 ## Resultados ## 
 print()
 print('Datos del modelo de regresion')
