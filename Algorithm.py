@@ -55,4 +55,8 @@ print()
 print('La ecuacion del modelo es igual a: ')
 print('y =', lr.coef_, 'x ', lr.intercept_)
 
+print()
+print('Precision del modelo: ')
+print(lr.score(X_train, Y_train))
+
 
