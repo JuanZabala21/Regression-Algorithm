@@ -32,14 +32,16 @@ X = boston.data[:, np.newaxis, 5]
 ## Datos correspondientes a las etiquetas ## 
 Y = boston.target 
 
-
+## Grafica de los datos correspondientes ## 
 plt.scatter(X,Y)
 plt.xlabel("Numero de habitaciones")
 plt.ylabel("Valor medio")
 plt.show() 
 
+## Implementando Algoritmo de Regresión ## 
 from sklearn.model_selection import train_test_split 
 
+## Separando datos ## 
 X_train, X_test, Y_test = train_test_split(X, Y, test_size=0.2)
 
 lr = linear_nodel.LinearRegression()
