@@ -29,3 +29,9 @@ plt.xlabel("Numero de habitaciones")
 plt.ylabel("Valor medio")
 plt.show() 
 
+from sklearn.model_selection import train_test_split 
+
+X_train, X_test, Y_test = train_test_split(X, Y, test_size=0.2)
+
+lr = lineal_model.LineaRegression()
+
